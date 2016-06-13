@@ -58,8 +58,8 @@ html, body {
 }
 #minnus {
 	position: absolute;
-    top: -4.5%;
-    left: 47.5%;
+    top: -4%;
+    left: 48%;
     
     height: 5.6vmin;
     width: 5.6vmin;
@@ -86,8 +86,8 @@ html, body {
 }
 #hourth {
 	position: absolute;
-    top: -5%;
-    left: 47%;
+    top: -4%;
+    left: 48%;
     
     height: 7.2vmin;
     width: 7.2vmin;
