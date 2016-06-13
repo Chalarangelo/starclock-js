@@ -1,0 +1,114 @@
+html, body {
+    width: 98%;
+	min-width: 98%;
+    max-width: 98%;
+	height: 98%;
+	min-height: 98%;
+    max-height: 98%;
+    background-color: black;
+    overflow: hidden;
+}
+.hidden {
+    display: none;
+}
+#sun {
+	border-radius: 50%;
+	width: 16vmin;
+	height: 16vmin; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -8vmin; 
+    margin-left: -8vmin;
+    background-color: orange;
+	border-color: rgba(255,165,0,0.8);
+    border-width: 0.25vmin;
+    border-style: solid;
+    border-radius: 50%;
+    
+    box-shadow: 0px 0px 5vmin yellow;
+}
+#secondury {
+    position: absolute;
+    top: -4%;
+    left: 48%;
+    
+    height: 2.8vmin;
+    width: 2.8vmin;
+	background-color: red;
+	border-color: maroon;
+    border-width: 0.05vmin;
+    border-style: solid;
+    border-radius: 50%;
+}
+#secondury-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 44vmin;
+    height: 44vmin;
+    margin-top: -22vmin;
+    margin-left: -22vmin;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255,255,255, 0.15);
+    border-radius: 50%;
+}
+#minnus {
+	position: absolute;
+    top: -4.5%;
+    left: 47.5%;
+    
+    height: 5.6vmin;
+    width: 5.6vmin;
+	background-color: coral;
+	border-color: orangered;
+    border-width: 0.05vmin;
+    border-style: solid;
+    border-radius: 50%;	
+}
+#minnus-orbit {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 58vmin;
+    height: 58vmin;
+    margin-top: -29vmin;
+    margin-left: -29vmin;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255,255,255, 0.15);
+    border-radius: 50%;	
+}
+#hourth {
+	position: absolute;
+    top: -5%;
+    left: 47%;
+    
+    height: 7.2vmin;
+    width: 7.2vmin;
+	background-color: cornflowerblue;
+	border-color: royalblue;
+    border-width: 0.05vmin;
+    border-style: solid;
+    border-radius: 50%;   	
+}
+#hourth-orbit {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 76vmin;
+    height: 76vmin;
+    margin-top: -38vmin;
+    margin-left: -38vmin;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255,255,255, 0.15);
+    border-radius: 50%;	
+}
