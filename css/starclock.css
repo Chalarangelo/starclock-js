@@ -8,8 +8,16 @@ html, body {
     background-color: black;
     overflow: hidden;
 }
-.hidden {
-    display: none;
+#footer{
+    color: white;
+    font-family: 'Work Sans';
+    overflow: visible;
+    text-align: center;
+    position: fixed;
+    bottom: 0.5em;
+    right: 0.65em;
+    font-size: 0.7em;
+    font-style: italic;
 }
 #sun {
 	border-radius: 50%;
