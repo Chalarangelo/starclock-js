@@ -1,5 +1,3 @@
-// TODO: Git commit, write README, add to my StackDeveloper profile etc.
-// TODO: Rename all files to starclockjs and update references in index.
 $(document).ready(function(){
 	// Variable definitions for all the planets.
 	var $sun ={
@@ -28,6 +26,8 @@ $(document).ready(function(){
 		transformationObject.css('-o-transform',transformationValue);
 		transformationObject.css('-transform',transformationValue);
 	}
+	// Make the cursor become a hand over the footer.
+	$('#footer').css('cursor','pointer');
 	// Get current date and time at startup.
 	var datetime = new Date();
 	// Initially position all planets based on current date and time.
@@ -67,4 +67,19 @@ $(document).ready(function(){
 		var val = (datetime.getSeconds()*0.004+datetime.getMinutes()*0.25+datetime.getHours()*15);
     	transform($hourth.orbit,'rotate('+val+'deg)');
 	},30000);
+	// Open new tab/window with the project's github on footer click.
+	$('#footer').click(function(){
+		window.open('https://github.com/chalarangelo/starclock-js', '_blank');
+	});
+	// Highlight footer on hover.
+	$('#footer').hover(
+		function(){
+			$(this).css({'color':'lightgreen','font-style':'normal'});
+			$('.fa-github').removeClass('fa-github').addClass('fa-arrow-circle-down');
+		},
+		function(){
+			$(this).css({'color':'white','font-style':'italic'});
+			$('.fa-arrow-circle-down').removeClass('fa-arrow-circle-down').addClass('fa-github');
+		}
+	);
 });
