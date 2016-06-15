@@ -1,5 +1,5 @@
 # Javascript/jQuery Astronomical Clock (starclock-js)
-## An cool-looking clock built entirely using HTML, Javascript, jQuery and CSS. 
+## A cool-looking clock built entirely using HTML, Javascript, jQuery and CSS. 
 
 ![Astronomical Clock Preview](https://bbqsource.files.wordpress.com/2016/06/capture.png?w=648 "Astronomical Clock Preview")
 
