@@ -1,19 +1,24 @@
-# Javascript/jQuery Astronomical Clock #
+# Javascript/jQuery Astronomical Clock (starclock-js)
+## An cool-looking clock built entirely using HTML, Javascript, jQuery and CSS. 
 
-A simple "astronomical" looking clock that I designed in my free time. The planets represent units of time (seconds, minutes, hours, weekdays etc.) and their rotation is calculated accordingly based on the current time.
+![Astronomical Clock Preview](https://bbqsource.files.wordpress.com/2016/06/capture.png?w=648 "Astronomical Clock Preview")
 
-## Live version ##
+**Check the live version [here](http://chalarangelo.github.io/starclock-js/index.html).**
 
-There is a live version of the project, available [here](http://chalarangelo.github.io/starclock-js/index.html).
+---
 
-## Dependencies ##
+## Setup & Usage
 
-The project is heavily based on jQuery functionality. 
+### Dependencies
 
-## Usage ##
+The project is heavily based on jQuery. Except for that, you are good to go. 
 
-Like I said above, this project was designed in my spare time and does not server any practical purpose except looking kinda pretty. Feel free to tinker with the CSS file if you want to embed it in some page or just use it "as is" if you want a page that shows the time in a nice-looking way.
+### Customization
 
-## License ##
+Feel free to tinker with the CSS and Javascript files if you feel like the design and/or update times are not what you would like.  If you want to add/remove planets, just change the according `div`s in the HTML file. To remove the footer to the project's repository on github, simply remove all the content between inside `<div id="footer">...</div>`. You can also remove the top clock display and/or the adjust icon, be removing the contnet inside `<div id="sun-text">...</div>`. Remember to update the Javascript methods accordingly if you remove the whole `div`s.
 
-The project is licensed under the MIT License, however it would be nice if you could credit me if you fork or use my code.
+---
+
+## License
+
+The project is licensed under the MIT License, however it would be nice if you could credit me if you fork or use my code. 
