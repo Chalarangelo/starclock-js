@@ -25,12 +25,20 @@ html, body {
 .hidden {
     display: none;
 }
+.fa-toggle-off, .fa-toggle-on{
+    cursor: pointer;
+}
 #footer{
     position: fixed;
     bottom: 0.5em;
     right: 0.65em;
     font-size: 0.7em;
     font-style: italic;
+    cursor: pointer;
+}
+#footer:hover{
+    font-style: normal;
+    color: lightgreen;
 }
 #sun {
 	border-radius: 50%;

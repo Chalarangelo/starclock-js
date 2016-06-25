@@ -2,7 +2,6 @@ $(document).ready(function(){
 	// Variable definitions for all the planets.
 	var $sun ={
 		planet: 		$('#sun'),
-		text: 			$('#sun-text'),
 		innertext: 		$('#sun-text .inner-text')
 	}
 	var $secondury = {
@@ -64,9 +63,6 @@ $(document).ready(function(){
 	function monthLength(m,y){return((m==1)?((isLeapYear(y)?29:28)):((m==3||m==5||m==8||m==10)?30:31));}
 	// Get current date and time at startup.
 	var datetime = new Date();
-	// Make the cursor become a hand over the show hand icon and the footer.
-	$('.fa-adjust').css('cursor','pointer');
-	$('#footer').css('cursor','pointer');
 	// Initially position all planets based on current date and time.
 	transform($secondury.orbit,'rotate('+(datetime.getMilliseconds()*0.006+datetime.getSeconds()*6)+'deg)');
 	transform($secondury.text,'rotate(-'+(datetime.getMilliseconds()*0.006+datetime.getSeconds()*6)+'deg)');
@@ -242,19 +238,17 @@ $(document).ready(function(){
 	// Highlight footer on hover.
 	$('#footer').hover(
 		function(){
-			$(this).css({'color':'lightgreen','font-style':'normal'});
 			$('.fa-github').removeClass('fa-github').addClass('fa-arrow-circle-down');
 		},
 		function(){
-			$(this).css({'color':'white','font-style':'italic'});
 			$('.fa-arrow-circle-down').removeClass('fa-arrow-circle-down').addClass('fa-github');
 		});
 	/*
 	 * When the show-hide icon is clicked, the text that displays on top of the
 	 * planets will toggle on/off, hidding or appearing as it should.
 	 */
-	$('.fa-adjust').click(function(){
-		$(this).toggleClass('rotated');
+	$('.fa-toggle-off, .fa-toggle-on').click(function(){
+		$(this).toggleClass('fa-toggle-off').toggleClass('fa-toggle-on');
 		$secondury.text.toggleClass('hidden');
 		$minnus.text.toggleClass('hidden');
 		$hourth.text.toggleClass('hidden');
